@@ -97,9 +97,6 @@ export default function Footer() {
               <li>
                 <span className="text-amber-200">Laddoo Candles</span>
               </li>
-              <li>
-                <span className="text-amber-200">Custom Candles</span>
-              </li>
             </ul>
           </div>
 
