@@ -17,16 +17,14 @@ export default function HeroSection() {
             peace and tranquility.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 text-lg">
-              Shop Now
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-amber-600 text-amber-600 hover:bg-amber-50 dark:hover:bg-amber-900/20 px-8 py-3 text-lg bg-transparent"
+            <a
+              href="https://wa.me/918910827601?text=Hi%2C%20I%20want%20to%20purchase%20an%20aromatic%20candle%20from%20you."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 text-lg font-medium rounded-md transition-colors"
             >
-              Learn More
-            </Button>
+              Shop Now
+            </a>
           </div>
         </div>
 
