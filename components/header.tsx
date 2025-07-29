@@ -4,6 +4,7 @@ import { useState } from "react"
 import { Menu, X, Sun, Moon } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useTheme } from "next-themes"
+import Image from "next/image"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -20,12 +21,23 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-40 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md border-b border-amber-200 dark:border-gray-700">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="flex items-center space-x-4">
-          <h1 className="text-2xl font-bold text-amber-800 dark:text-amber-400">🕯️ Aromatic Candle</h1>
+
+        {/* Logo and Title */}
+        <div className="flex items-center space-x-3">
+          <Image
+            src="/candles/logo.jpeg"
+            alt="Gandham Aroma Logo"
+            width={40}
+            height={40}
+            className="rounded-full object-cover"
+          />
+          <h1 className="text-2xl font-bold text-amber-800 dark:text-amber-400">
+            Gandham Aroma
+          </h1>
         </div>
 
+        {/* Theme + Menu Icons */}
         <div className="flex items-center space-x-4">
-          {/* Theme Toggle */}
           <Button
             variant="ghost"
             size="icon"
@@ -35,7 +47,6 @@ export default function Header() {
             {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
           </Button>
 
-          {/* Hamburger Menu Button */}
           <Button
             variant="ghost"
             size="icon"
@@ -46,7 +57,7 @@ export default function Header() {
           </Button>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Navigation Menu */}
         {isMenuOpen && (
           <div className="absolute top-full left-0 right-0 bg-white dark:bg-gray-900 border-b border-amber-200 dark:border-gray-700 shadow-lg">
             <nav className="container mx-auto px-4 py-4">

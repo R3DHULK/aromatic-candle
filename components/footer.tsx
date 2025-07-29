@@ -1,4 +1,4 @@
-import { Facebook, Instagram, MessageCircle } from "lucide-react"
+import { Facebook, Instagram, Youtube, MessageCircle } from "lucide-react"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -8,13 +8,13 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-2xl font-bold mb-4">🕯️ Aromatic Candle</h3>
+            <h3 className="text-2xl font-bold mb-4">Gandham Aroma</h3>
             <p className="text-amber-200 mb-4">
               Crafting premium aromatic candles that illuminate your world with natural fragrances and warm light.
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/share/1BHJZ4fjiT/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:text-blue-300 transition-colors"
@@ -22,12 +22,20 @@ export default function Footer() {
                 <Facebook className="h-6 w-6" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://instagram.com/gandham.25"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-pink-400 hover:text-pink-300 transition-colors"
               >
                 <Instagram className="h-6 w-6" />
+              </a>
+              <a
+                href="https://youtube.com/@ghandhamaroma"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-pink-400 hover:text-pink-300 transition-colors"
+              >
+                <Youtube className="h-6 w-6" />
               </a>
               <a
                 href="https://wa.me/919876543210"
@@ -93,23 +101,23 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4">Join Our WhatsApp Channel</h4>
-            <p className="text-amber-200 mb-4">Get special discounts and sales updates superfast!</p>
+            <h4 className="text-lg font-semibold mb-4">Message Us On WhatsApp</h4>
+            <p className="text-amber-200 mb-4">Get special discounts and customisations superfast!</p>
             <a
-              href="https://wa.me/919876543210?text=Hi, I want to join your WhatsApp channel for special discounts"
+              href="https://wa.me/918910827601?text=Hi, I want to join your WhatsApp channel for special discounts"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-md transition-colors"
             >
               <MessageCircle className="h-4 w-4 mr-2" />
-              Join Channel
+              Send Hi
             </a>
           </div>
         </div>
 
         <div className="border-t border-amber-800 mt-8 pt-8 text-center">
           <p className="text-amber-200">
-            © {currentYear} Aromatic Candle. All rights reserved. | Made with ❤️ for candle lovers
+            © {currentYear} Gandham Aroma. All rights reserved. | Made with ❤️ for candle lovers
           </p>
         </div>
       </div>

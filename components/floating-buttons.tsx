@@ -24,7 +24,7 @@ export default function FloatingButtons() {
   }
 
   const openWhatsApp = () => {
-    window.open("https://wa.me/919876543210?text=Hi, I want to purchase a customised aromatic candle", "_blank")
+    window.open("https://wa.me/918910827601?text=Hi, I want to purchase a customised aromatic candle", "_blank")
   }
 
   return (
