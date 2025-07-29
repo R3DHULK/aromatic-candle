@@ -83,16 +83,19 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Categories</h4>
             <ul className="space-y-2">
               <li>
-                <span className="text-amber-200">Pillar Candles</span>
+                <span className="text-amber-200">Rose Candles</span>
               </li>
               <li>
                 <span className="text-amber-200">Jar Candles</span>
               </li>
               <li>
-                <span className="text-amber-200">Taper Candles</span>
+                <span className="text-amber-200">Angel Candles</span>
               </li>
               <li>
-                <span className="text-amber-200">Votive Candles</span>
+                <span className="text-amber-200">Sunflower Candles</span>
+              </li>
+              <li>
+                <span className="text-amber-200">Laddoo Candles</span>
               </li>
               <li>
                 <span className="text-amber-200">Custom Candles</span>
